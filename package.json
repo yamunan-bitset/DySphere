@@ -1,0 +1,24 @@
+{
+  "name": "dysphere",
+  "productName": "DySphere",
+  "version": "1.0.0",
+  "description": "Chat using DySphere!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamunan-bitset/DySphere.git"
+  },
+  "author": "arcschx arccothx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamunan-bitset/DySphere/issues"
+  },
+  "homepage": "https://github.com/yamunan-bitset/DySphere#readme",
+  "dependencies": {
+    "electron": "^34.0.2",
+    "toastify-js": "^1.12.0"
+  }
+}
