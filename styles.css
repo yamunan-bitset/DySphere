@@ -30,6 +30,15 @@ h1, p {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.second-rectangle {
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    width: 50px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .transparent-window {
     display: none;
     position: fixed;
@@ -94,5 +103,5 @@ h1, p {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     font-family: 'Ubuntu', sans-serif;
-    text-align: right;
+    /*text-align: right;*/
 }
