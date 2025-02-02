@@ -42,12 +42,10 @@ function getStyle(el, styleProp) {
     }
   }
 
-var current_align = 'left';
+var current_align = 0;
 
 function switch_user() {
-    const displayAreas = document.querySelectorAll('.display-area');
-    var align_current = getStyle(displayAreas[displayAreas.length - 1], 'text-align');
-    current_align = align_current === 'left' ? 'right' : 'left';
+    current_align++;
 }
 
 var n = 0;
@@ -63,7 +61,11 @@ function send() {
     displayArea.style.position = 'absolute';
     displayArea.style.top = `${n * 50}px`;
     displayArea.style.left = '10px';
-    displayArea.style.textAlign = current_align;
+    if (current_align % 2 == 0) {
+        displayArea.style.textAlign = 'left';
+    } else {
+        displayArea.style.textAlign = 'right';
+    }
     transparentWindow.insertBefore(displayArea, transparentWindow.firstChild);
 }
 
